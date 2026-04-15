@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>井川方言を聞いてみよう</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #222;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a { color: #1a5276; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ヘッダー */
+    header {
+      background: #fff;
+      border-bottom: 2px solid #c0392b;
+      padding: 1rem 2rem;
+    }
+
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .site-title {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .site-title a {
+      color: #555;
+      font-weight: normal;
+    }
+
+    /* メイン */
+    main {
+      flex: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-subtitle {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .page-intro {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.9;
+      margin-bottom: 0.5rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 1.2rem 0 2rem;
+      font-size: 0.9rem;
+      color: #1a5276;
+    }
+
+    /* テキスト一覧 */
+    .text-list { margin-top: 1rem; }
+
+    .text-entry {
+      border-top: 1px solid #ddd;
+      padding: 1.8rem 0;
+    }
+
+    .text-entry:last-child {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .text-entry h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 0.7rem;
+    }
+
+    .entry-number {
+      color: #999;
+      font-weight: normal;
+      margin-right: 0.4rem;
+    }
+
+    .text-entry p {
+      font-size: 0.93rem;
+      color: #444;
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+
+    .entry-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .entry-links a {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border: 1px solid #1a5276;
+      border-radius: 3px;
+      font-size: 0.85rem;
+      color: #1a5276;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .entry-links a:hover {
+      background: #1a5276;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .entry-links a.disabled {
+      border-color: #bbb;
+      color: #bbb;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* フッター */
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      font-size: 0.82rem;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    footer a { color: #ccc; }
+    footer a:hover { color: #fff; }
+
+    .footer-copy {
+      margin-top: 0.5rem;
+      color: #777;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+
+
+<main>
+  <h1>井川方言を聞いてみよう</h1>
+  <p class="page-subtitle">井川方言の自然談話</p>
+
+  <p class="page-intro">
+    井川方言の談話データを公開しています。<br>
+    音声やテキストは Zenodo のリポジトリからダウンロードすることができます。
+  </p>
+
+  <div class="text-list">
+
+    <div class="text-entry">
+      <h3><span class="entry-number">[1]</span> てしゃまんく</h3>
+      <p>
+        井川に伝わる力持ち伝説「てしゃまんく」をもとにしたウェブ紙芝居（音声つき）＋井川方言クイズ<br>
+        絵：齊藤暢子　再話：谷口ジョイ　井川方言指導：遠藤弘子先生・井川の皆様
+      </p>
+      <div class="entry-links">
+        <a href="https://joytaniguchi.github.io/teshamanku/" target="_blank" rel="noopener">紙芝居を見る</a>
+      </div>
+    </div>
+
+    <div class="text-entry">
+      <h3><span class="entry-number">[2]</span> もちこ（荷かつぎ）</h3>
+      <p>
+        1988年12月20日、静岡市田代にて収録。滝浪よし（1899年生）と滝浪鎮（1928年生）による自然談話。<br>
+        データ収集：中條修　アノテーション：岩隈航南
+      </p>
+      <div class="entry-links">
+        <a href="https://joytaniguchi.github.io/nikatsugi/" target="_blank" rel="noopener">テキストを見る</a>
+        <a href="https://zenodo.org/records/19497752" target="_blank" rel="noopener">Zenodo</a>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         テキストを追加するには、上の <div class="text-entry">〜</div>
+         ブロックをコピーして番号・内容を変更してください
+         ============================================================ -->
+
+  </div>
+</main>
+
+<footer>
+  <p>
+    <a href="https://www.joytaniguchi.com/" target="_blank" rel="noopener">Joy Taniguchi, Ph.D. | 静岡理工科大学 情報学部</a>
+  </p>
+  <p class="footer-copy">© Joy Taniguchi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
